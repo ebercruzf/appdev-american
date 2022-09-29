@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="410d1ebf-4467-4715-a10a-fef2ba8468e3" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="apdev-americanFlow" doc:id="a295f3db-b232-4024-adef-492f795f5c03" >
+		<http:listener doc:name="HTTP" doc:id="2396d9df-d4f0-4d5d-803f-108338745107" config-ref="HTTP_Listener_config" path="/flights" allowedMethods="GET, POST"/>
+		<set-payload value="Flight info" doc:name="Set Payload" doc:id="5b9c1ff9-4b40-4a44-8cf0-37631e2682e2" />
+	</flow>
+</mule>

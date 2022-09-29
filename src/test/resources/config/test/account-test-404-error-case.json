@@ -1,0 +1,11 @@
+{
+	"ur": "/api/client/{id}/account",
+	"pathParams": {
+		"clientID" : ""},
+	"queryParams": {},
+	"method": "GET",
+	"skipHeader": false,
+	"statusCode": 404,
+	"expecteResponse": "mock/sys/id/response-json/account-test-400-error.json"
+}
+
