@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "24fe6f86-23ea-4a84-b30c-2e5832a241a2",
+		"name": "AnyPoint-MuleSoft",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1304060"
+	},
+	"item": [
+		{
+			"name": "Flights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"flights"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
